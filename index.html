@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baer</title>
+    <style>
+        :root {
+            --bg-primary: #f5f1e8;
+            --bg-secondary: #ffffff;
+            --text-primary: #2c2416;
+            --text-secondary: #5a4a3a;
+            --accent: #c9a961;
+            --border: #d4c5a9;
+            --shadow: rgba(0, 0, 0, 0.1);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #1a1510;
+                --bg-secondary: #2a1f16;
+                --text-primary: #f5f1e8;
+                --text-secondary: #c9b896;
+                --accent: #d4a574;
+                --border: #3d2f20;
+                --shadow: rgba(0, 0, 0, 0.4);
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+        }
+
+        .header {
+            text-align: center;
+            padding: 3rem 1.5rem 2rem;
+            background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+            border-bottom: 2px solid var(--accent);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            font-style: italic;
+            color: var(--text-secondary);
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .cocktails {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .cocktails {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .cocktail-card {
+            background-color: var(--bg-secondary);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cocktail-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 12px var(--shadow);
+        }
+
+        .cocktail-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .cocktail-content {
+            padding: 1.5rem;
+        }
+
+        .cocktail-name {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+            letter-spacing: 0.02em;
+        }
+
+        .cocktail-description {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+            margin-top: 3rem;
+        }
+
+        .last-updated {
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+
+        /* Loading lazy images */
+        img[loading="lazy"] {
+            background: var(--border);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Baer</h1>
+        <p>Paer Bar</p>
+    </header>
+
+    <main class="container">
+        
+        <section class="section">
+            <h2 class="section-title">Classic Spirit Forward</h2>
+            <div class="cocktails">
+                
+        <div class="cocktail-card">
+            <img src="images/manhattan.jpg" alt="Manhattan" class="cocktail-image" loading="lazy">
+            <div class="cocktail-content">
+                <h3 class="cocktail-name">Manhattan</h3>
+                <p class="cocktail-description">Rye whiskey, Sweet Vermouth, Angostura aromatic bitters</p>
+            </div>
+        </div>
+
+        <div class="cocktail-card">
+            <img src="images/martini.jpg" alt="Martini" class="cocktail-image" loading="lazy">
+            <div class="cocktail-content">
+                <h3 class="cocktail-name">Martini</h3>
+                <p class="cocktail-description">Gin, Dry Vermouth, Orange bitters</p>
+            </div>
+        </div>
+
+        <div class="cocktail-card">
+            <img src="images/boulevardier.jpg" alt="Boulevardier" class="cocktail-image" loading="lazy">
+            <div class="cocktail-content">
+                <h3 class="cocktail-name">Boulevardier</h3>
+                <p class="cocktail-description">Bourbon Whiskey, Campari, Sweet Vermouth</p>
+            </div>
+        </div>
+
+        <div class="cocktail-card">
+            <img src="images/negroni.jpg" alt="Negroni" class="cocktail-image" loading="lazy">
+            <div class="cocktail-content">
+                <h3 class="cocktail-name">Negroni</h3>
+                <p class="cocktail-description">Gin, Campari, Sweet Vermouth</p>
+            </div>
+        </div>
+
+        <div class="cocktail-card">
+            <img src="images/sazerac.jpg" alt="Sazerac" class="cocktail-image" loading="lazy">
+            <div class="cocktail-content">
+                <h3 class="cocktail-name">Sazerac</h3>
+                <p class="cocktail-description">Rye whiskey, Simple Syrup, Peychauds Bitters, Absinthe</p>
+            </div>
+        </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Lounge Cocktails</h2>
+            <div class="cocktails">
+                
+        <div class="cocktail-card">
+            <img src="images/paper-plane.jpg" alt="Paper Plane" class="cocktail-image" loading="lazy">
+            <div class="cocktail-content">
+                <h3 class="cocktail-name">Paper Plane</h3>
+                <p class="cocktail-description">Bourbon Whiskey, Amaro Nonino, Aperol, Lemon juice</p>
+            </div>
+        </div>
+
+        <div class="cocktail-card">
+            <img src="images/last-word.jpg" alt="Last word" class="cocktail-image" loading="lazy">
+            <div class="cocktail-content">
+                <h3 class="cocktail-name">Last word</h3>
+                <p class="cocktail-description">Gin, Green Chartreuse, Maraschino, Lime juice</p>
+            </div>
+        </div>
+
+        <div class="cocktail-card">
+            <img src="images/old-fashioned.jpg" alt="Old Fashioned" class="cocktail-image" loading="lazy">
+            <div class="cocktail-content">
+                <h3 class="cocktail-name">Old Fashioned</h3>
+                <p class="cocktail-description">Bourbon Whiskey, Simple Syrup, Angostura aromatic bitters, Orange bitters</p>
+            </div>
+        </div>
+
+        <div class="cocktail-card">
+            <img src="images/japanese-cocktail.jpg" alt="Japanese cocktail" class="cocktail-image" loading="lazy">
+            <div class="cocktail-content">
+                <h3 class="cocktail-name">Japanese cocktail</h3>
+                <p class="cocktail-description">Brandy, Orgeat Syrup, Angostura aromatic bitters</p>
+            </div>
+        </div>
+
+        <div class="cocktail-card">
+            <img src="images/toronto.jpg" alt="Toronto" class="cocktail-image" loading="lazy">
+            <div class="cocktail-content">
+                <h3 class="cocktail-name">Toronto</h3>
+                <p class="cocktail-description">Rye whiskey, Fernet Branca, Simple Syrup, Angostura aromatic bitters</p>
+            </div>
+        </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Sours</h2>
+            <div class="cocktails">
+                
+        <div class="cocktail-card">
+            <img src="images/sawyer.jpg" alt="Sawyer" class="cocktail-image" loading="lazy">
+            <div class="cocktail-content">
+                <h3 class="cocktail-name">Sawyer</h3>
+                <p class="cocktail-description">Gin, Lime juice, Simple Syrup, Angostura aromatic bitters, Peychauds Bitters, Orange bitters</p>
+            </div>
+        </div>
+
+        <div class="cocktail-card">
+            <img src="images/kentucky-flyer.jpg" alt="Kentucky Flyer" class="cocktail-image" loading="lazy">
+            <div class="cocktail-content">
+                <h3 class="cocktail-name">Kentucky Flyer</h3>
+                <p class="cocktail-description">Rye whiskey, Maraschino, Lemon juice</p>
+            </div>
+        </div>
+
+        <div class="cocktail-card">
+            <img src="images/bramble.jpg" alt="Bramble" class="cocktail-image" loading="lazy">
+            <div class="cocktail-content">
+                <h3 class="cocktail-name">Bramble</h3>
+                <p class="cocktail-description">Gin, Lemon juice, Simple Syrup, Crème de mûre</p>
+            </div>
+        </div>
+
+        <div class="cocktail-card">
+            <img src="images/gimlet.jpg" alt="Gimlet" class="cocktail-image" loading="lazy">
+            <div class="cocktail-content">
+                <h3 class="cocktail-name">Gimlet</h3>
+                <p class="cocktail-description">Gin, Lime juice, Simple Syrup</p>
+            </div>
+        </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Coffee / Dessert</h2>
+            <div class="cocktails">
+                
+        <div class="cocktail-card">
+            <img src="images/revolver.jpg" alt="Revolver" class="cocktail-image" loading="lazy">
+            <div class="cocktail-content">
+                <h3 class="cocktail-name">Revolver</h3>
+                <p class="cocktail-description">Bourbon Whiskey, Coffee liqueur, Orange bitters</p>
+            </div>
+        </div>
+
+        <div class="cocktail-card">
+            <img src="images/carajillo.jpg" alt="Carajillo" class="cocktail-image" loading="lazy">
+            <div class="cocktail-content">
+                <h3 class="cocktail-name">Carajillo</h3>
+                <p class="cocktail-description">Licor 43, Espresso</p>
+            </div>
+        </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div>Crafted with care</div>
+        <div class="last-updated">Updated: December 30, 2025 at 10:52 PM</div>
+    </footer>
+</body>
+</html>

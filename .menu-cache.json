@@ -1,0 +1,272 @@
+{
+  "data": {
+    "bar": {
+      "name": "Baer",
+      "subtitle": "Paer Bar",
+      "description": null,
+      "images": []
+    },
+    "categories": [
+      {
+        "name": "Classic Spirit Forward",
+        "items": [
+          {
+            "in_bar_shelf": true,
+            "type": "cocktail",
+            "sort": 1,
+            "price": {
+              "price": 0,
+              "price_minor": 0,
+              "formatted_price": "EUR 0.00",
+              "currency": "EUR"
+            },
+            "public_id": null,
+            "name": "Manhattan",
+            "description": "Rye whiskey, Sweet Vermouth, Angostura aromatic bitters",
+            "image": "http://192.168.89.30:8092/api/images/379/thumb"
+          },
+          {
+            "in_bar_shelf": true,
+            "type": "cocktail",
+            "sort": 2,
+            "price": {
+              "price": 0,
+              "price_minor": 0,
+              "formatted_price": "EUR 0.00",
+              "currency": "EUR"
+            },
+            "public_id": null,
+            "name": "Martini",
+            "description": "Gin, Dry Vermouth, Orange bitters",
+            "image": "http://192.168.89.30:8092/api/images/664/thumb"
+          },
+          {
+            "in_bar_shelf": false,
+            "type": "cocktail",
+            "sort": 3,
+            "price": {
+              "price": 0,
+              "price_minor": 0,
+              "formatted_price": "EUR 0.00",
+              "currency": "EUR"
+            },
+            "public_id": null,
+            "name": "Boulevardier",
+            "description": "Bourbon Whiskey, Campari, Sweet Vermouth",
+            "image": "http://192.168.89.30:8092/api/images/573/thumb"
+          },
+          {
+            "in_bar_shelf": false,
+            "type": "cocktail",
+            "sort": 4,
+            "price": {
+              "price": 0,
+              "price_minor": 0,
+              "formatted_price": "EUR 0.00",
+              "currency": "EUR"
+            },
+            "public_id": null,
+            "name": "Negroni",
+            "description": "Gin, Campari, Sweet Vermouth",
+            "image": "http://192.168.89.30:8092/api/images/399/thumb"
+          },
+          {
+            "in_bar_shelf": true,
+            "type": "cocktail",
+            "sort": 5,
+            "price": {
+              "price": 0,
+              "price_minor": 0,
+              "formatted_price": "EUR 0.00",
+              "currency": "EUR"
+            },
+            "public_id": null,
+            "name": "Sazerac",
+            "description": "Rye whiskey, Simple Syrup, Peychauds Bitters, Absinthe",
+            "image": "http://192.168.89.30:8092/api/images/733/thumb"
+          }
+        ]
+      },
+      {
+        "name": "Lounge Cocktails",
+        "items": [
+          {
+            "in_bar_shelf": true,
+            "type": "cocktail",
+            "sort": 6,
+            "price": {
+              "price": 0,
+              "price_minor": 0,
+              "formatted_price": "EUR 0.00",
+              "currency": "EUR"
+            },
+            "public_id": null,
+            "name": "Paper Plane",
+            "description": "Bourbon Whiskey, Amaro Nonino, Aperol, Lemon juice",
+            "image": "http://192.168.89.30:8092/api/images/630/thumb"
+          },
+          {
+            "in_bar_shelf": true,
+            "type": "cocktail",
+            "sort": 7,
+            "price": {
+              "price": 0,
+              "price_minor": 0,
+              "formatted_price": "EUR 0.00",
+              "currency": "EUR"
+            },
+            "public_id": null,
+            "name": "Last word",
+            "description": "Gin, Green Chartreuse, Maraschino, Lime juice",
+            "image": "http://192.168.89.30:8092/api/images/587/thumb"
+          },
+          {
+            "in_bar_shelf": true,
+            "type": "cocktail",
+            "sort": 8,
+            "price": {
+              "price": 0,
+              "price_minor": 0,
+              "formatted_price": "EUR 0.00",
+              "currency": "EUR"
+            },
+            "public_id": null,
+            "name": "Old Fashioned",
+            "description": "Bourbon Whiskey, Simple Syrup, Angostura aromatic bitters, Orange bitters",
+            "image": "http://192.168.89.30:8092/api/images/558/thumb"
+          },
+          {
+            "in_bar_shelf": false,
+            "type": "cocktail",
+            "sort": 9,
+            "price": {
+              "price": 0,
+              "price_minor": 0,
+              "formatted_price": "EUR 0.00",
+              "currency": "EUR"
+            },
+            "public_id": null,
+            "name": "Japanese cocktail",
+            "description": "Brandy, Orgeat Syrup, Angostura aromatic bitters",
+            "image": "http://192.168.89.30:8092/api/images/367/thumb"
+          },
+          {
+            "in_bar_shelf": true,
+            "type": "cocktail",
+            "sort": 10,
+            "price": {
+              "price": 0,
+              "price_minor": 0,
+              "formatted_price": "EUR 0.00",
+              "currency": "EUR"
+            },
+            "public_id": null,
+            "name": "Toronto",
+            "description": "Rye whiskey, Fernet Branca, Simple Syrup, Angostura aromatic bitters",
+            "image": "http://192.168.89.30:8092/api/images/291/thumb"
+          }
+        ]
+      },
+      {
+        "name": "Sours",
+        "items": [
+          {
+            "in_bar_shelf": true,
+            "type": "cocktail",
+            "sort": 11,
+            "price": {
+              "price": 0,
+              "price_minor": 0,
+              "formatted_price": "EUR 0.00",
+              "currency": "EUR"
+            },
+            "public_id": null,
+            "name": "Sawyer",
+            "description": "Gin, Lime juice, Simple Syrup, Angostura aromatic bitters, Peychauds Bitters, Orange bitters",
+            "image": "http://192.168.89.30:8092/api/images/817/thumb"
+          },
+          {
+            "in_bar_shelf": true,
+            "type": "cocktail",
+            "sort": 12,
+            "price": {
+              "price": 0,
+              "price_minor": 0,
+              "formatted_price": "EUR 0.00",
+              "currency": "EUR"
+            },
+            "public_id": null,
+            "name": "Kentucky Flyer",
+            "description": "Rye whiskey, Maraschino, Lemon juice",
+            "image": "http://192.168.89.30:8092/api/images/633/thumb"
+          },
+          {
+            "in_bar_shelf": true,
+            "type": "cocktail",
+            "sort": 13,
+            "price": {
+              "price": 0,
+              "price_minor": 0,
+              "formatted_price": "EUR 0.00",
+              "currency": "EUR"
+            },
+            "public_id": null,
+            "name": "Bramble",
+            "description": "Gin, Lemon juice, Simple Syrup, Crème de mûre",
+            "image": "http://192.168.89.30:8092/api/images/462/thumb"
+          },
+          {
+            "in_bar_shelf": true,
+            "type": "cocktail",
+            "sort": 14,
+            "price": {
+              "price": 0,
+              "price_minor": 0,
+              "formatted_price": "EUR 0.00",
+              "currency": "EUR"
+            },
+            "public_id": null,
+            "name": "Gimlet",
+            "description": "Gin, Lime juice, Simple Syrup",
+            "image": "http://192.168.89.30:8092/api/images/604/thumb"
+          }
+        ]
+      },
+      {
+        "name": "Coffee / Dessert",
+        "items": [
+          {
+            "in_bar_shelf": true,
+            "type": "cocktail",
+            "sort": 15,
+            "price": {
+              "price": 0,
+              "price_minor": 0,
+              "formatted_price": "EUR 0.00",
+              "currency": "EUR"
+            },
+            "public_id": null,
+            "name": "Revolver",
+            "description": "Bourbon Whiskey, Coffee liqueur, Orange bitters",
+            "image": "http://192.168.89.30:8092/api/images/512/thumb"
+          },
+          {
+            "in_bar_shelf": true,
+            "type": "cocktail",
+            "sort": 16,
+            "price": {
+              "price": 0,
+              "price_minor": 0,
+              "formatted_price": "EUR 0.00",
+              "currency": "EUR"
+            },
+            "public_id": null,
+            "name": "Carajillo",
+            "description": "Licor 43, Espresso",
+            "image": "http://192.168.89.30:8092/api/images/526/thumb"
+          }
+        ]
+      }
+    ]
+  }
+}
